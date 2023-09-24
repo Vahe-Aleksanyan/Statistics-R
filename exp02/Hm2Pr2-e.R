@@ -1,0 +1,15 @@
+set.seed(112)
+x = rnorm(1000)
+y = rnorm(1000, 3, 2)
+z = runif(1000, -1.5, 1.5)
+t = rexp(1000, 1.2)
+w = rpois(1000, 3.1)
+
+par(mfrow = c(2, 3))
+hist(x, main = "Histogram of Dataset x", xlab = "Value", ylab = "Frequency")
+hist(y, main = "Histogram of Dataset y", xlab = "Value", ylab = "Frequency")
+hist(z, main = "Histogram of Dataset z", xlab = "Value", ylab = "Frequency")
+hist(t, main = "Histogram of Dataset t", xlab = "Value", ylab = "Frequency")
+hist(w, main = "Histogram of Dataset w", xlab = "Value", ylab = "Frequency")
+
+par(mfrow = c(1, 1))
