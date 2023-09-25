@@ -31,8 +31,11 @@ my_cars = data.frame(
   qsec = mtcars$qsec
 )
 
+# we can notice that drat and qseq boxplots are not visible since the interquartile range 
+#is too small
 boxplot(my_cars, main="Comparative Boxplot",
         col=c("red", "blue", "green"), names=c("disp", "drat", "qsec"))
+
 
 
 sd_my_cars = sapply(my_cars, Standardize)
